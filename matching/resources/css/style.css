@@ -1,0 +1,33 @@
+html {
+  font-size: 14px;
+  font-family: "Work Sans", sans-serif;
+  background-color: rgb(255,242,242);
+}
+
+.row {
+  background-color: rgb(255,242,242);
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: rgb(32,64,86);
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(32,64,86);
+}
+
+p {
+  color: rgb(74,74,74);
+}
+
+.card {
+  font-weight: 900;
+  font-size: 7rem;
+  color: rgb(255,255,255);
+  height: 12.5rem;
+  background-color: rgb(35,64,86);
+}
