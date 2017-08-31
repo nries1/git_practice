@@ -29,5 +29,7 @@ p {
   font-size: 7rem;
   color: rgb(255,255,255);
   height: 12.5rem;
+  width: 23%;
   background-color: rgb(35,64,86);
+  margin: 0 0.5rem 0.5rem 0;
 }
