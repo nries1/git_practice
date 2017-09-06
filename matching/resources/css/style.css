@@ -4,6 +4,10 @@ html {
   background-color: rgb(255,242,242);
 }
 
+body {
+  margin-top: 5.25rem;
+}
+
 .row {
   background-color: rgb(255,242,242);
 }
@@ -29,7 +33,17 @@ p {
   font-size: 7rem;
   color: rgb(255,255,255);
   height: 12.5rem;
-  width: 23%;
+  width: 22%;
   background-color: rgb(35,64,86);
   margin: 0 0.5rem 0.5rem 0;
+  border-radius: 0.5rem;
+  text-align: center;
+  transition-property: background-color;
+  transition-duration: 2000ms;
+  transition-timing-function: ease-out;
+}
+
+.card:hover {
+  cursor: pointer;
+  background-color: red;
 }
