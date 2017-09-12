@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  MatchGame.renderCards(MatchGame.generateCardValues(),$('.cardsContainer'));
+  MatchGame.renderCards(MatchGame.generateCardValues(),$('div.cardsContainer'));
 
 
 var MatchGame = {};
@@ -45,7 +45,7 @@ MatchGame.generateCardValues = function() {
 /*
   Converts card values to jQuery card objects and adds them to the supplied game
   object.
-*/
+*/  
 
 MatchGame.renderCards = function(cardValues, $game) {
   $game.empty();
