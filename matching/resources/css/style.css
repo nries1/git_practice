@@ -47,3 +47,23 @@ p {
   cursor: pointer;
   background-color: red;
 }
+
+.timer {
+  display: flex;
+  align-items: center;
+}
+
+.timer h1 {
+  margin-right: 2rem;
+}
+
+#timerBox {
+  border: 2px solid black;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}

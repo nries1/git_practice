@@ -1,18 +1,11 @@
 $(document).ready(function() {
   MatchGame.renderCards(MatchGame.generateCardValues(),$('div.cardsContainer'));
-/*  $('div.card').click(function() {
-    if ($(this).data("flipped") == true) {
-        return;
-      } else {
-        $(this).css("background-color", $(this).data("color"));
-        $(this).text($(this).data("value"));
-      };
-  });
-*/
+  $('div#timerBox').append(new Date());
   $('div.card').click(function() { flipCard($(this),$('div.cardsContainer'))});
 
 });
 var MatchGame = {};
+var matchCounter = 0;
 /*
   Sets up a new game after HTML document has loaded.
   Renders a 4x4 board of cards.
@@ -96,6 +89,12 @@ MatchGame.renderCards = function(cardValues, $game) {
               $game.data('flippedCards')[1].css("color", "rgb(204,204,204)");
               $game.data('flippedCards')[1].css("border", "4px solid #ffffff");
               $game.data('flippedCards',[]);
+              matchCounter = matchCounter + 1;
+              if (matchCounter == 8) {
+                setTimeout(function() {
+                  alert("you win!");
+                }, 350);
+              };
             } else {
               setTimeout(function() {
                 console.log("flippedCards array: "+toString($game.data('flippedCards')[1]));
